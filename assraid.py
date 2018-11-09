@@ -38,8 +38,9 @@ async def on_ready():
             if role.name.strip("@") in config["ignore roles"]:
                 role_ids.append(role.id)
                 config["ignore roles"].remove(role.name.strip("@"))
-    print(role_ids)
-    print(config["ignore roles"])
+
+    if len(config["ignore roles"]) > 0:
+        print(f"Warning: Couldn't resolve following roles to IDs, these roles will be ignored: {config['ignore roles']}")
 
     # Determine the users to ass
     users_ignored = list()
