@@ -1,0 +1,12 @@
+{
+    "login": {
+        "email": "<email>",
+        "password": "<password>"
+    },
+    "ignore roles": [
+        "admin",
+        "Moderator"
+    ],
+    "shit file": "shit.txt"
+}
+
